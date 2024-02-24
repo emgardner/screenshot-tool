@@ -1,5 +1,6 @@
 # dependencies
-node_modules
+packages/**/node_modules
+/node_modules
 
 # sst
 .sst

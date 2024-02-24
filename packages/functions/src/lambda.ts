@@ -20,7 +20,7 @@ export const handler = ApiHandler(async (event) => {
     defaultViewport: chromium.defaultViewport,
     executablePath: process.env.IS_LOCAL
       ? YOUR_LOCAL_CHROMIUM_PATH
-      : await chromium.executablePath,
+      : await chromium.executablePath(),
     headless: chromium.headless,
     ignoreHTTPSErrors: true,
   });
